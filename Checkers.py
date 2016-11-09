@@ -61,7 +61,20 @@ def kingMe():
 def playerMovement():
 
 #Priority
+white_peices=0		#these variables should be declared elsewhere in the program
+black_peices=2		#and are purely for debuging purposes
 def checkWin():
+	#print "hello world"
+	if(white_peices<1 or black_peices<1):	#because there cannot be a tie, the if statement only checks for victory
+		if(white_peices<black_peices):		#this will check which one of the variables has no peices left
+			return 1						#if the white pieces win then a 2 will be returned
+		else:								#and if black pieces win then a 1 will be retunred
+			return 2
+	else: return							#otherwise the funcdtion will terminate
+
+
+#print checkWin()
+
 
 #Priority
 def rotateBoard():
