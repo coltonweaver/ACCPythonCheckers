@@ -1,4 +1,57 @@
-def checkLegal():
+
+def checkLegal(checkerboard[x][y],checkerboard[x1][y1]):
+	#Please someone rewrite this so it works!
+	def isAt():
+		if checkerboard[x][y] == "x"
+			return True
+		else 
+			return False
+
+	def pieceBlock():
+		for num in range(x1,x)
+			for num1 in range (y1,y)
+				if checkerboard[num][num1] is full
+					return False
+				else
+					return True
+
+	def sameTeam():
+		if playerCall.piece() is pieceBlock()
+			return True
+		else 
+			return False
+
+	def diffTeam():
+		if playerCall.piece() is not pieceBlock();
+			retrun True
+		else 	
+			return False
+
+	if playerCall.isAt(x,y) is True:
+		if player.checkerboard[x1][y1] is None
+			return False
+		else if playerCall.pieceBlock() is sameTeam()
+			return False
+		else if playerCall.pieceBlock() is diffTeam()
+			#Sees if the space diagonal from the blocking piece is open
+			#if it is then return True else return False
+		else if playerCall.pieceBlock() is None
+			if (piece != king)
+				if (x1 == x):
+					return False
+				else if(y1 == y):
+					return False
+				else if (abs(x2 - x)> 1) or (abs(y2 -y) > 1)
+					return False
+				else
+					return True
+			else
+				if(abs(x2-x)>1) or (abs(y2-y)>1)
+					return False
+				else 
+					return True
+	else
+		return False
 
 def doubleMove():
 
